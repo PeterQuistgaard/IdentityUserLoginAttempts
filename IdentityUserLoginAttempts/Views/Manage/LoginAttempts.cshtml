@@ -1,0 +1,36 @@
+﻿<!-- #region Change -->
+@model IEnumerable<IdentityUserLoginAttempts.Models.LoginAttempt>
+
+@{
+    ViewBag.Title = "LoginAttempts";
+}
+
+<h2>LoginAttempts</h2>
+
+<table class="table">
+    <tr>
+        <th>UserName</th>
+        <th>LoginAttemptDate</th>
+        <th>IpAddress</th>
+        <th>SignInStatus</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.User.UserName
+        </td>
+        <td>
+            @item.LoginAttemptDateUtc.ToLocalTime()
+        </td>
+        <td>
+            @item.IpAddress
+        </td>
+        <td>
+            @item.SignInStatus
+        </td>
+    </tr>
+}
+
+</table>
+<!-- #endregion Change -->
