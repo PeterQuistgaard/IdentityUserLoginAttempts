@@ -7,8 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityUserLoginAttempts",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CEE5479-0B72-4BAF-B89C-B1408F6C967D}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\Pictures\Image1.png = ..\..\Pictures\Image1.png
-		..\..\Pictures\Image2.png = ..\..\Pictures\Image2.png
+		Image1.png = Image1.png
+		Image2.png = Image2.png
 		README.md = README.md
 	EndProjectSection
 EndProject
