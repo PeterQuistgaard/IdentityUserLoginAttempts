@@ -12,9 +12,9 @@ Add tracking of user login attempts to ASP.Net Identity 2.2.1
 Create a new project. Use ASP.NET WebApplication (.NET Framework)
 
 
-![Image01](image1.png)
+![Image01](https://github.com/PeterQuistgaard/IdentityUserLoginAttempts/blob/master/Image1.png)
 
-![Image01](image2.png)
+![Image01](https://github.com/PeterQuistgaard/IdentityUserLoginAttempts/blob/master/Image2.png)
 
 ## Make some changes in the generated code.
 
