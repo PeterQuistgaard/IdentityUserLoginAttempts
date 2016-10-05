@@ -37,7 +37,8 @@ Change connectionStrings to match your prefered database.
 ```
 
 ### Add new class LoginAttempt to IdentityModels.cs
-```#C
+```C#
+
 #region Change
 [Table("AspNetUserLoginAttempts")]
 public class LoginAttempt
@@ -64,7 +65,8 @@ public class LoginAttempt
 ```
 
 ### Modify class ApplicationUser in IdentityModels 
-```#C
+```C#
+
 public class ApplicationUser : IdentityUser
 {
     #region Change
@@ -87,7 +89,8 @@ public class ApplicationUser : IdentityUser
 ```
 
 ### Override PasswordSignInAsync in ApplicationSignInManager (in IdentityCongig.cs)
-```#c
+```C#
+
 #region Change
 public async override Task<SignInStatus> PasswordSignInAsync(string userName, string password, bool isPersistent, bool shouldLockout)
 {
@@ -113,7 +116,8 @@ public async override Task<SignInStatus> PasswordSignInAsync(string userName, st
 ### AccountController Login Action
 To enable password failures to trigger account lockout, change to shouldLockout: true
 
-```#C
+```C#
+
 #region Change
 // var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
 var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: true);
@@ -125,7 +129,8 @@ var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password
 ### Action LoginAttempts
 Add new Action to Controllers\ManagerController
 
-```#c
+```C#
+
 #region Change
 // GET: /Manage/LoginAttempts
 public async Task<ActionResult> LoginAttempts()
